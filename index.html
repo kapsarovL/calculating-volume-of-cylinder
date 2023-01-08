@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>calculating the volume of a cylinder</title>
+</head>
+<body>
+
+
+<div>
+<h1>Calculating the volume of a cylinder</h1>
+<label for="radius">Radius:</label><br>
+<input type="text" id="radius"><br>
+<label for="height">Height:</label><br>
+<input type="text" id="height"><br>
+<button onclick="volumeRoller()">Calculate</button>
+</div>
+
+<script>
+function volumeRoller() {
+
+  let radius = document.getElementById("radius").value;
+  let height = document.getElementById("height").value;
+
+  radius = Number(radius);
+  height = Number(height);
+
+  let volume = Math.PI * radius * radius * height;
+
+  alert("The volume of the cylinder is " + volume);
+}
+</script>
+</body>
+</html>
